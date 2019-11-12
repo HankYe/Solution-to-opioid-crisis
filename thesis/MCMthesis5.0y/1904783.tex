@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[1904783]{MCMthesis}\problem{C}    %填写控制号、题号，年份不需要填（自动以当前电脑时间年份为准）
+\usepackage{palatino} %这个是COMAP官方杂志的字体，如不需要可注释掉（以使用默认字体）
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\graphicspath{{figures/}{}}
+\renewcommand {\thefigure} {\arabic{figure}}
+%\renewcommand{\figurename}{Fig.}
+
+%设置图表标题与上下文的间距
+\setlength{\belowcaptionskip}{4pt}
+\setlength{\abovecaptionskip}{4pt}
+
+%目录显示自定义
+\usepackage{titlesec}
+\usepackage{titletoc}
+\setcounter{tocdepth}{3}    %目录显示到subsection(2),若要到subsubsection(3)请自改
+
+\usepackage[font=small,]{caption}   %使图表标题字号小一号
+\def\abstractname{Summary}  %摘要标题
+\title{An MCM Paper Made by 1904783}  %标题
+
+\begin{document}
+%\listoffigures
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Fig.}}
+
+%----------以下是摘要部分----------
+\begin{abstract}\small
+    There are mainly ... problems in the ... district.
+
+    In order to address problems above and provide the ... for the leadership, we conclude \textbf{several sub-problems and its solution} in our paper:...
+
+    In first model, we choose the most appropriate \textbf{\textit{Fitting Function}}.Using \textbf{\textit{Grey Predicted Model}}, we can ... Then we successfully figure out the ...
+
+    Secondly, we use the model \textbf{\textit{CV}} to...
+
+	Finally, we build sth. to describe and work out...
+	
+	In brief/in the whole modeling pocess,...
+\end{abstract}
+
+%---------以下生成sheet页----------
+%\renewcommand{\baselinestretch}{0.6}\normalsize    %该语句可调整行距（数值为标准行距之倍数），对其后到再次修改前的部分有效，请自行使用
+\maketitle  %生成sheet页
+\pagestyle{empty}
+
+%---------以下生成目录----------
+\newpage
+\tableofcontents
+\newpage
+
+%---------以下生成正文----------
+\pagestyle{fancy}
+\setlength\parskip{0.8\baselineskip}  %调整段间距
+\setcounter{page}{1}    %从正文开始计页码
+\input{body.tex}    %正文及Reference内容均在body.tex中修改
+\input{references.tex}
+\begin{appendices}
+\appendix
+%\renewcommand{\appendixname}{Appendix~\Alph{section}}
+\input{appendix.tex}
+\end{appendices}
+\end{document}

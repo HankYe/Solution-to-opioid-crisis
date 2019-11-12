@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Memo
+% LaTeX Template
+% Version 1.0 (30/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rob Oakes (http://www.oak-tree.us) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,11pt]{texMemo} % Set the paper size (letterpaper, a4paper, etc) and font size (10pt, 11pt or 12pt)
+
+\usepackage{parskip} % Adds spacing between paragraphs
+\setlength{\parindent}{15pt} % Indent paragraphs
+
+%----------------------------------------------------------------------------------------
+%	MEMO INFORMATION
+%----------------------------------------------------------------------------------------
+
+\memoto{the Chief Administrator, DEA/NFLIS Database} % Recipient(s)
+
+\memofrom{Team$\#$1904783} % Sender(s)
+
+\memosubject{A Brief Summary and Strategy for the Opioid Crisis} % Memo subject
+
+\memodate{Monday, January 28, 2019} % Date, set to \today for automatically printing todays date
+
+%\logo{\includegraphics[width=0.3\textwidth]{logo.png}} % Institution logo at the top right of the memo, comment out this line for no logo
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the memo header information
+
+%----------------------------------------------------------------------------------------
+%	MEMO CONTENT
+%----------------------------------------------------------------------------------------
+
+Our team has proposed a modified epidemic model to analyze the characteristics of the opioid crisis that five states are facing, i.e. Kentucky (KY), Ohio (OH), Pennsylvania (PA), West Virginia (WV) and Virginia (VA). In this model, we take the elements both in the state and out of the state into consideration. Our model is based on the SIS model, people in which model are assumed to be possible to get infective again after the recovery.
+
+More specifically, we develop a spread matrix to evaluate the performance of the trend to spread opioid use between every two places. When computing the value of this matrix, we set up a reasonable assumption that the recovery rate will change in linear distribution over time. Therefore, there are a spread matrix and coefficient matrix of linear distribution to be identified in our training.
+
+After the training, we get the robust results and successfully fit the data of five states, which suggest the important information about the flow of opioid use in and between these five states. The rate of contacting into State KY is significantly higher than any other state, followed by that into State OH. This can explain the large number of drug reports in these two states, as well as predict the possible location and time that opioid crisis might have occurred in these five states.
+
+We also develop our modified model to fit the influence that socio-economy factors may have on the trends-in-use. We identify three main important factors, i.e. educational degree, marital condition and disability as correction factors to further adjust our model. Afterwards, our model successfully improves the fitting effect of the predictions.
+
+Combining with both two results from our model, we successfully produce a regulation strategy to avoid the expand of the opioid crisis. The result of our model indicates the importance of controlling the flow of opioid use from other states, and also proposes a state to improve its recovery rate to decrease the speed of increasing reports number.
+
+We have a strong belief that our model can effectively solve the opioid crisis no matter in what places and provide an effective and feasible way to best solve this problem.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
